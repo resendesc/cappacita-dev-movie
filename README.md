@@ -22,7 +22,7 @@ $ npx lite-server
 
 <p align="center">
   <a href="https://twitter.com/Cesar_resende1">
-    <img alt="Siga no Twitter" src="https://twitter.com/Cesar_resende1">
+    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https://github.com/resendesc/cappacita-dev-movie">
   </a>
 </p>
 
