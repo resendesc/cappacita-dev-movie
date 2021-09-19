@@ -1,7 +1,9 @@
+const dataBase = require("../database/databaseKenex");
 const cors = require("cors");
 const express = require("express");
 const app = express();
 const axios = require("axios");
+const bodyParser = require("body-parser");
 
 app.use(cors());
 
@@ -27,6 +29,14 @@ app.get("/originais-movie", async (req, res) => {
   } catch (error) {
     console.error(error);
   }
+});
+
+app.get("/usuarios", async (req, res) => {
+  res.send(await dataBase.mostrarUsuarios());
+});
+
+app.get("/usuario/:id", async (req, res) => {
+  res.send(await dataBase.mostrarUsuario(req.params.id));
 });
 
 app.listen("3008");
