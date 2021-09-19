@@ -1,15 +1,3 @@
-Iniciando o projeto:
-
-```
-
-$ npm install
-
-$ npm start
-
-$ npx lite-server
-
-```
-
 <h4 align="center"> 
 	🚧 Movies - Cappacita Dev - projeto final módulo 5 🚀 em construção... 🚧
 </h4>
