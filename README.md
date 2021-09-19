@@ -1,9 +1,3 @@
-# Movies - Cappacita Dev - projeto final módulo 5
-
-### nodejs - boostrap - axios - consumir a api do tmdb
-
-##
-
 Iniciando o projeto:
 
 ```
@@ -17,7 +11,7 @@ $ npx lite-server
 ```
 
 <h4 align="center"> 
-	🚧 NodeJS e API  🚀 em construção... 🚧
+	🚧 Movies - Cappacita Dev - projeto final módulo 5 🚀 em construção... 🚧
 </h4>
 
 <p align="center">
@@ -28,7 +22,7 @@ $ npx lite-server
 
 ## 💻 Sobre o projeto
 
-♻️ NodeJS e API
+♻️ nodejs - boostrap - axios -API
 
 ### 1. O que é API Rest e NodeJS
 
@@ -188,14 +182,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Css][css]: posicionamento, dimensionamento e muito mais
 - [Javascript][javascript]
 - [HTML][html]: estrutura e efeitos
-- [React][reactjs]: os fundamentos, como state, props, components, ciclo de vida.
 - [Git][git]
 - [Github][github]
-- [Yarn][yarn]
 - [Node.js][nodejs]
 - [Docker](https://www.docker.com/)
-- [Insomnia](https://insomnia.rest/)
-- [Robo 3T](https://robomongo.org/)
 
 ## 🚀 Como executar o projeto
 
@@ -213,18 +203,25 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode][vsco
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/douglasabnovato/node-api-rest
+$ git clone https://github.com/resendesc/cappacita-dev-movie
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd node-api-rest
+$ cd cappacita-dev-movie
 
 # Instale as dependências
 $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
+$ npm start
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3001
+# Acesse o serviço referente aos filmes de comédia na url - http://localhost:3008/comedia
+# Acesse o serviço referente aos filmes originais movie na url - http://localhost:3008/originais-movie
+
+
+#Execute o comando npmx lite-server em outro aba do terminal
+$ npx lite-server
+
+# Será aberto no seu navegador padrão uma aba com a url - http://localhost:3000
 
 ```
 
@@ -238,9 +235,9 @@ $ npm run start
 
 ## 📝 Licença
 
-Este projeto esta sobe a licença MIT.
+Este projeto esta sobe a licença GNU Lesser General Public License v2.1.
 
-Feito com ❤️ por Douglas A B Novato 👋🏽 [Entre em contato!](https://www.linkedin.com/in/douglasabnovato/)
+Feito com ❤️ por Cesar Resende 👋🏽 [Entre em contato!](https://www.linkedin.com/in/cesar-resende/)
 
 [git]: https://git-scm.com/doc
 [github]: https://docs.github.com/en
