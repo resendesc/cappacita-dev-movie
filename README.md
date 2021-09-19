@@ -10,11 +10,11 @@
 
 ## 💻 Sobre o projeto
 
-♻️ nodejs - boostrap - axios -API
+♻️ nodejs - boostrap - axios - API
 
 ### 1. O que é API Rest e NodeJS
 
-- [x] 1.1. Javascript para Frond-end, e agora para Backend com NodeJS.
+- [x] 1.1. Javascript para Frond-end e Backend com NodeJS.
 - [x] 1.2. API Rest : separa o back-end, servidor e banco de dados, do frond-end.
 - [x] 1.3. **NodeJS**, **MongoDB**, **Express**
 
@@ -66,7 +66,7 @@ app.listen(3001);
   }
 ```
 
-### 14. Adicionando CORS
+### 6. Adicionando CORS
 
 - [x] 14.1. Permitir acessar essa API de outros endereços
 - [x] 14.2. permitir acesso por outros domínios
@@ -115,7 +115,8 @@ $ npm start
 # Acesse o serviço referente aos filmes originais movie na url - http://localhost:3008/originais-movie
 
 
-#Execute o comando npmx lite-server em outro aba do terminal
+#Execute o comando npmx lite-server em outro aba do terminal, entre na pasta do frontend utilizando o comando cd src/frontend
+$ cd src/frontend/
 $ npx lite-server
 
 # Será aberto no seu navegador padrão uma aba com a url - http://localhost:3000
