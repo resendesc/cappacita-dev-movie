@@ -1,5 +1,5 @@
 <h4 align="center"> 
-	🚧 Movies - Cappacita Dev - projeto final módulo 5 🚀 em construção... 🚧
+	Movies - Cappacita Dev - Projeto final módulo 5 🚀
 </h4>
 
 <p align="center">
