@@ -5,6 +5,8 @@ const app = express();
 const axios = require("axios");
 const bodyParser = require("body-parser");
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(cors());
 
 app.get("/comedia", async (req, res) => {
@@ -37,6 +39,24 @@ app.get("/usuarios", async (req, res) => {
 
 app.get("/usuario/:id", async (req, res) => {
   res.send(await dataBase.mostrarUsuario(req.params.id));
+});
+
+app.put("/usuarios/:id", async (req, res) => {
+  const usuario = await dataBase.atualizarUsuario(req.params.id, {
+    username: req.body.username,
+    name: req.body.name,
+    email: req.body.email,
+  });
+  res.send(usuario);
+});
+
+app.post("/usuarios", async (req, res) => {
+  const usuario = await dataBase.salvarUsuarios({
+    username: req.body.username,
+    name: req.body.name,
+    email: req.body.email,
+  });
+  res.send(usuario);
 });
 
 app.listen("3008");
