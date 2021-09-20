@@ -100,21 +100,9 @@
       <div class="container">
         <div class="row">
           <div class="col section-1 section-description wow fadeIn">
-            <h1 class="float-left pb-3 pt-3">Usuários</h1>
+            <h1 class="float-left pb-3 pt-3">Filme</h1>
 
             <div class="usuarios"></div>
-
-            <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">id</th>
-                  <th scope="col">username</th>
-                  <th scope="col">Nome</th>
-                  <th scope="col">E-mail</th>
-                </tr>
-              </thead>
-              <tbody class="tbody-usuarios"></tbody>
-            </table>
           </div>
         </div>
       </div>
@@ -156,11 +144,19 @@
 
   <script>
     async function getContent() {
+      var query = location.search.slice(1);
+      var partes = query.split("&");
+      var data = {};
+      partes.forEach(function (parte) {
+        var chaveValor = parte.split("=");
+        let filme = chaveValor[1];
+        console.log(filme);
+      });
       try {
-        const response = await fetch("http://localhost:3008/usuarios");
+        const response = await fetch(`http://localhost:3008/filme${filme}`);
         const data = await response.json();
         show(data);
-        // console.log(data);
+        console.log(data);
       } catch (error) {
         console.log(error);
       }
@@ -168,20 +164,18 @@
 
     getContent();
 
-    function show(usuarios) {
-      console.log(usuarios);
-      let output = "";
-      for (let usuario in usuarios) {
-        console.log(usuarios[usuario].username);
-
-        let nome = usuarios[usuario].name;
-        let username = usuarios[usuario].username;
-        let email = usuarios[usuario].email;
-        let id = usuarios[usuario].id;
-
-        output += `<tr><th scope="row">${id}</th><td>${username}</td><td>${nome}</td><td>${email}</td></tr>`;
-        document.querySelector(".tbody-usuarios").innerHTML = output;
-      }
+    function show(filme) {
+      console.log(filme);
+      //   let output = "";
+      //   for (let usuario in usuarios) {
+      //     console.log(usuarios[usuario].username);
+      //     let nome = usuarios[usuario].name;
+      //     let username = usuarios[usuario].username;
+      //     let email = usuarios[usuario].email;
+      //     let id = usuarios[usuario].id;
+      //     output += `<tr><th scope="row">${id}</th><td>${username}</td><td>${nome}</td><td>${email}</td></tr>`;
+      //     document.querySelector(".tbody-usuarios").innerHTML = output;
+      //   }
     }
   </script>
 

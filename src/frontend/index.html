@@ -96,7 +96,38 @@
       </div>
     </nav>
 
-    <div id="top-content" class="section-1-container section-container">
+    <div id="top-content" class="section-top-container section-container">
+      <div class="container">
+        <div class="row">
+          <div
+            class="
+              col
+              section-top section-description
+              wow
+              fadeIn
+              pt-5
+              text-success
+            "
+          >
+            <h2 style="text-align: center">
+              <p class="text-danger">Seja bem vindo ao MOVIE - CAPPACITA DEV</p>
+            </h2>
+            <h3>
+              Quando voc&ecirc; &eacute; convidado, quando voc&ecirc; &eacute;
+              bem-vindo,<br />
+              quando voc&ecirc; &eacute; notado, quando voc&ecirc; &eacute;
+              querido,<br />
+              quando n&atilde;o te querem deixar partir,<br />
+              quando partes e deixa cora&ccedil;&otilde;es partidos<br />
+              voc&ecirc; tem a certeza de que &eacute; amado<br />
+              voc&ecirc; tem a certeza de que tem amigos.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="" class="section-1-container section-container">
       <div class="container">
         <div class="row">
           <div class="col section-1 section-description wow fadeIn">
@@ -145,7 +176,7 @@
       <div class="container">
         <div class="row">
           <div class="col section-2 section-description wow fadeIn">
-            <h1>Comédia</h1>
+            <h1>Comédias - Cappacita dev</h1>
 
             <div
               id="carousel-comedia"
@@ -240,6 +271,8 @@
           let nome = filmes[filme][i].original_title;
           let url = `http://image.tmdb.org/t/p/w300`;
           let img = filmes[filme][i].poster_path;
+          let data = filmes[filme][i].release_date;
+          let ano = data.substring(0, 4);
           // output += "<div class=item>";
           // output += `<div class="poster"><img src="${url}${img}"</div>`;
           // output += `<div  class="titulo"><p>${nome}</p></div>`;
@@ -254,6 +287,8 @@
                 class="img-fluid mx-auto d-block"
                 alt="${nome}" title="${nome}"
               />`;
+          output += `<div class="titulo float-left"><strong>${nome}</strong></div><br />`;
+          output += `<div class="ano float-left">${ano}</div>`;
           output += `</div>`;
           document.querySelector(".carousel-inner.originais-movie").innerHTML =
             output;
@@ -285,12 +320,16 @@
             let nome = filmes[filme][i].original_name;
             let url = `http://image.tmdb.org/t/p/w300`;
             let img = filmes[filme][i].poster_path;
+            let data = filmes[filme][i].first_air_date;
+            let ano = data.substring(0, 4);
             // output += "<div class=item>";
             // output += `<div class="poster"><img src="${url}${img}"</div>`;
             // output += `<div  class="titulo"><p>${nome}</p></div>`;
             // output += "</div>";
             // document.querySelector(".carousel-inner.comedia").innerHTML =
             //   output;
+            // output += `<div class="titulo float-left"><strong>${nome}</strong></div><br />`;
+            // output += `<div class="ano float-left">${ano}</div>`;
             if ([i] == 0) {
               output += `<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">`;
             } else {

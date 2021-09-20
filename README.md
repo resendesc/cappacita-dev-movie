@@ -116,10 +116,37 @@ $ npm start
 
 
 #Execute o comando npmx lite-server em outro aba do terminal, entre na pasta do frontend utilizando o comando cd src/frontend
+
 $ cd src/frontend/
 $ npx lite-server
 
 # Será aberto no seu navegador padrão uma aba com a url - http://localhost:3000
+
+# Url para visualizar a lista de usuários
+# http://localhost:3000/usuarios.html
+
+# Serviços implementados no backende
+
+# Listar todos os usuários
+# http://localhost:3008/usuarios
+
+#Listar usuário pelo id
+# http://localhost:3008/usuario/:id
+
+
+# adicionar usuário
+# http://localhost:3008/usuarios/:id
+# Para testar criar no Postman uma rota com a url acima com o petodo PUT e os paramentros abaixo no body utilizando X-www-fomr-urlencoded
+# username =
+# name =
+#email =
+
+#Retornar Filme
+# http://localhost:3008/filme/:id
+# Para testar criam no Postman uma rota com o metodo GET emviando pelo params o id do filme
+# Exemplo de url http://localhost:3008/filme/124124
+
+
 
 ```
 

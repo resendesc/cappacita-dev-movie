@@ -10,11 +10,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get("/comedia", async (req, res) => {
-  // response é a resposta do axios mas eu tiro o data de dentro do response
-
   try {
     const { data } = await axios(
       "https://api.themoviedb.org/3/discover/tv?with_network=213&language=pt-BR&api_key=40c392d5af8e33387efa8ecda09e6d7f"
+    );
+    return res.json(data);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
+app.get("/filme/:id", async (req, res) => {
+  try {
+    let id = req.params.id;
+    const { data } = await axios(
+      `https://api.themoviedb.org/3/movie/${id}?api_key=40c392d5af8e33387efa8ecda09e6d7f`
     );
     return res.json(data);
   } catch (error) {
