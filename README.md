@@ -186,4 +186,4 @@ Feito com ❤️ por Cesar Resende 👋🏽 [Entre em contato!](https://www.link
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-Fonte - [Rocketseat]
+Fonte - Rocketseat
