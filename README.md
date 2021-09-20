@@ -186,4 +186,6 @@ Feito com ❤️ por Cesar Resende 👋🏽 [Entre em contato!](https://www.link
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
+<img src="https://raw.githubusercontent.com/resendesc/cappacita-dev-movie/main/src/frontend/assets/img/movie.png"/>
+
 Fonte - Rocketseat
