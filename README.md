@@ -188,6 +188,7 @@ Feito com ❤️ por Cesar Resende 👋🏽 [Entre em contato!](https://www.link
 
 Fonte - Rocketseat
 
+Print do projeto
 <img src="https://raw.githubusercontent.com/resendesc/cappacita-dev-movie/main/src/frontend/assets/img/movie.png"/>
 
 
