@@ -134,18 +134,18 @@ $ npx lite-server
 # Listar todos os usuários
 # http://localhost:3008/usuarios
 
-#Listar usuário pelo id
+# Listar usuário pelo id
 # http://localhost:3008/usuario/:id
 
 
-# adicionar usuário
+# Adicionar usuário
 # http://localhost:3008/usuarios/:id
 # Para testar criar no Postman uma rota com a url acima com o petodo PUT e os paramentros abaixo no body utilizando X-www-fomr-urlencoded
 # username =
 # name =
 #email =
 
-#Retornar Filme
+# API do filme pelo id
 # http://localhost:3008/filme/:id
 # Para testar criam no Postman uma rota com o metodo GET emviando pelo params o id do filme
 # Exemplo de url http://localhost:3008/filme/124124
