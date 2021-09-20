@@ -24,7 +24,7 @@
 - [x] 2.2. Instalar o NPM, um constrole de versão: v6.14.6
 - [x] 2.3. `chocolatey`, `node -v`, `npm -v`
 
-### 3. Criando a estrtura
+### 3. Criando a estrutura
 
 - [x] 3.1. Objetivo: desenvolver a api
 - [x] 3.2. `mkdir node-api`, `cd node-api`,
@@ -36,7 +36,7 @@
 - [x] 4.1. Utilizando o **express**
 - [x] 4.2. criar o arquivo `server.js`
 - [x] 4.3. executar `node server.js`
-- [x] 4.4. `http://localhost:3001/`
+- [x] 4.4. `http://localhost:3008/`
 - [x] 4.5. código teste para o servidor
 
 ```javascript
@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
   res.send("Hello Word");
 });
 
-app.listen(3001);
+app.listen(3008);
 ```
 
 ### 5. Utilizando Nodemon
@@ -55,14 +55,18 @@ app.listen(3001);
 - [x] 5.1. `npm install -D nodemon`: instalar o Nodemon no ambiente de desenvolvimento
 - [x] 5.2. ao invés de `node server.js`, usar o `npm run dev`
 - [x] 5.3. reinicializar o servidor após alguma alteração
-- [x] 5.4. abre : `http://localhost:3001/`
+- [x] 5.4. abre : `http://localhost:3008/`
 - [x] 5.5. package.json/dependencies:
 
 ```json
 "dependencies": {
-    "express": "^4.16.4",
-    "mongoose": "^5.4.9",
-    "mongose": "0.0.2-security"
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.12"
   }
 ```
 
@@ -182,4 +186,4 @@ Feito com ❤️ por Cesar Resende 👋🏽 [Entre em contato!](https://www.link
 [html]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [javascript]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-Fonte - [Rocketseat - Starter](https://rocketseat.com.br/)
+Fonte - [Rocketseat]
