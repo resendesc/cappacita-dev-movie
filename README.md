@@ -150,7 +150,9 @@ $ npx lite-server
 # Para testar criam no Postman uma rota com o metodo GET emviando pelo params o id do filme
 # Exemplo de url http://localhost:3008/filme/124124
 
-
+# Base de dados
+# na pasta /src/database tem o arquivo movie.sql que é a base de dados com a tabela usuarios
+# Importe essa base para o seu servidor local
 
 ```
 
